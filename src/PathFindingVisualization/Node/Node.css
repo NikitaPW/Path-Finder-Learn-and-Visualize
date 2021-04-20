@@ -1,0 +1,115 @@
+.node {
+  position: relative;
+  width: 1.2vw;
+  height: 100%;
+  margin: -2px auto;
+  outline: 1px solid rgb(218, 225, 230);
+  display: inline-block;
+  box-sizing: border-box;
+  background-color:#ECECEC
+}
+
+.node-finish {
+  
+  background-image: url('../../ContentFiles/flag.png');
+  width: 1.2vw;
+  height: 100%;
+  margin: -2px auto;
+}
+
+.node-start {
+  
+  background-image: url('../../ContentFiles/start.png');
+}
+
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+
+
+.node-wall {
+  animation-name: wallAnimation;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 50%;
+  }
+
+  50% {
+    background-color: #FF1D58;
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: #F75990;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: #00DDFF;
+  }
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(255, 254, 106);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 254, 106);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 254, 106);
+  }
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.7);
+    background-color: #303C6C;
+  }
+
+  50% {
+    transform: scale(1.1);
+    background-color: #303C6C;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: #303C6C;
+  }
+}
