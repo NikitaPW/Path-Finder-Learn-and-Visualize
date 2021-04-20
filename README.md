@@ -1,3 +1,12 @@
+Meet my Path Finder Learn and Visualize tool! Get familiar with best known path finding algorithms, see how they actually work!
+
+![image](https://user-images.githubusercontent.com/56455016/115473757-9109ad00-a23c-11eb-9e9b-f52691971f39.png)
+
+Visualize! 
+
+![image](https://user-images.githubusercontent.com/56455016/115473815-ada5e500-a23c-11eb-866a-219c97486ef9.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
